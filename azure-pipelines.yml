@@ -13,6 +13,9 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
 
 steps:
 - task: NuGetToolInstaller@1
